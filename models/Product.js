@@ -14,7 +14,16 @@ Product.init(
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true
-    }
+    },
+    product_name: {
+      type: DataTypes.STRING,
+    },
+    price: {
+      type: DataTypes.INTEGER,
+    },
+    stock: {
+      type: DataTypes.INTEGER,
+    },
   },
   {
     sequelize,
