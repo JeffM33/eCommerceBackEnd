@@ -23,7 +23,7 @@ router.get('/:id', async(req, res) => {
     }]
   });
     if(!productData) {
-      res.status(404).json({message: 'No category with this id!'});
+      res.status(404).json({message: 'No product with this id!'});
     } 
     res.status(200).json(productData);
   } catch (err) {
